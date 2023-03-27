@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lesson 2</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<script>
+		//Задача 5. Дано вартість одиниці товару і кількість. Знайти загальну вартість та ПДВ (5% від загальної вартості)
+
+
+		const totalPrice = 1400
+		const quantityProduct = parseInt(prompt(`Введіть кількість товарів які ви бажаєте замовити`))
+		const quantityPercent = 0.05
+		const resultProductSum = totalPrice * quantityProduct
+		document.write(`Загальна сума вартості товарів складає ${resultProductSum} грн<br><br>`)
+		const percentOfPrice = resultProductSum * quantityPercent
+		document.write(`Загальний ПДВ складає ${percentOfPrice} грн`)
+	</script>
+</body>
+
+</html>

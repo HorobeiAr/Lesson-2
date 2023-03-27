@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lesson 2</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<script>
+		//Задача 5. Дано кількість секунд, що пройшла від початку доби. Визначити скільки це годин і хвилин.
+
+		const quantitySeconds = parseInt(prompt(`Введіть кількість секунд що пройшли від початку доби`))
+		const resultMinutes = quantitySeconds / 60
+		document.write(`Загальна кількість хвилин від початку доби складає ${resultMinutes.toFixed(5)} хв<br><br> `)
+		const resultOurs = quantitySeconds / 3600
+		document.write(`Загальна кількість годин від початку доби складає ${resultOurs.toFixed(5)} год `)
+	</script>
+</body>
+
+</html>

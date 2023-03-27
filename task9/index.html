@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lesson 2</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<script>
+		//Задача 6. З клавіатури вводяться вартість товару та кількість одиниць 3 товарів. Обчислити вартість кожного товару окремо та загальну вартість. Вивести чек (як у супермаркеті) використовуючи елементи розмітки.
+
+		const firstProductPrice = parseInt(prompt(`Введіть вартість першого товару`))
+		const firstProductQuantity = parseInt(prompt(`Введіть кількість першого товару`))
+		const secondProductPrice = parseInt(prompt(`Введіть вартість другого товару`))
+		const secondProductQuantity = parseInt(prompt(`Введіть кількість другого товару`))
+		const thirdProductPrice = parseInt(prompt(`Введіть вартість третього товару`))
+		const thirdProductQuantity = parseInt(prompt(`Введіть кількість третого товару`))
+		let resultPriceFirstProduct = firstProductPrice * firstProductQuantity
+		let resultPriceSecondProduct = secondProductPrice * secondProductQuantity
+		let resultPriceThirdProduct = thirdProductPrice * thirdProductQuantity
+		let resultSum = (resultPriceFirstProduct + resultPriceSecondProduct) + resultPriceThirdProduct
+		document.write(`Вас ВІТАЄ МАГАЗИН ЗДОРОВОЇ ЇЖІ НОВУС <br><br>
+Вартість першого товару складає ${resultPriceFirstProduct} грн <br><br>
+Вартість другого товару складає ${resultPriceSecondProduct} грн <br><br>
+Вартість третього товару складає ${resultPriceThirdProduct} грн <br><br>
+Загальна сумма до оплати буде складати ${resultSum} грн <br><br>
+Чекаємо на вас у Новус. Гарного дня тварі
+`)
+	</script>
+</body>
+
+</html>
